@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Consulta Veterinária</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="consuta.css">
+    <script src="ca.js" defer></script> <!-- Certifique-se de que seu JavaScript esteja carregado -->
+</head>
+<body>
+    <header>
+        <h1>Agendar Consulta Veterinária</h1>
+        <nav>
+            <ul>
+                <li><a href="pagina_inicial.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a href="ajudar.html">Como Ajudar</a></li>
+                <li><a href="cadastro.html" target="_blank">Cadastro</a></li> <!-- Link adicionado -->
+
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <form id="form-agendamento" onsubmit="return validarFormulario()">
+            <h2>Informações do Tutor</h2>
+            <label for="nomeTutor">Nome do Tutor:</label>
+            <input type="text" id="nomeTutor" name="nomeTutor" required>
+
+            <label for="idadeTutor">Idade do Tutor:</label>
+            <input type="number" id="idadeTutor" name="idadeTutor" required>
+
+            <label for="cpfTutor">CPF do Tutor:</label>
+            <input type="text" id="cpfTutor" name="cpfTutor" required placeholder="Digite o CPF">
+
+            <label for="dataNascimentoTutor">Data de Nascimento do Tutor:</label>
+            <input type="date" id="dataNascimentoTutor" name="dataNascimentoTutor" required>
+
+            <h2>Informações do Animal</h2>
+            <label for="nomeAnimal">Nome do Cachorro:</label>
+            <input type="text" id="nomeAnimal" name="nomeAnimal" required>
+
+            <label for="racaAnimal">Raça:</label>
+            <input type="text" id="racaAnimal" name="racaAnimal" required>
+
+            <label>Sexo do Animal:</label>
+            <select id="sexoAnimal" name="sexoAnimal" required>
+                <option value="">Selecione</option>
+                <option value="macho">Macho</option>
+                <option value="femea">Fêmea</option>
+            </select>
+
+            <h2>Detalhes da Consulta</h2>
+            <label for="dataConsulta">Data da Consulta:</label>
+            <input type="date" id="dataConsulta" name="dataConsulta" required>
+
+            <label for="horaConsulta">Hora da Consulta:</label>
+            <input type="time" id="horaConsulta" name="horaConsulta" required>
+
+            <input type="submit" value="Agendar">
+        </form>
+
+        <!-- Espaço para exibir a mensagem de confirmação -->
+        <div id="mensagem-confirmacao" style="display: none; margin-top: 20px; padding: 10px; border: 1px solid #4058db; border-radius: 8px; background-color: #e0f7fa;"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SUS Animal</p>
+    </footer>
+</body>
+</html>

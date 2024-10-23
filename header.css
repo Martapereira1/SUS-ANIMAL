@@ -1,0 +1,11 @@
+.menu-hamburger {
+    position: absolute;
+    top: 20px; /* Ajuste a posição vertical conforme necessário */
+    left: 20px; /* Ajuste a posição horizontal conforme necessário */
+    width: 40px; /* Aumente a largura */
+    height: 30px; /* Aumente a altura */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}

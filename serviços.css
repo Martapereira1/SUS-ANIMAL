@@ -1,0 +1,59 @@
+/* Centraliza e estiliza o título da página */
+header h1 {
+    text-align: center;
+    color: #eeeff3;
+    margin-bottom: 20px;
+}
+
+/* Centraliza e estiliza o subtítulo da seção */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estiliza a lista de serviços */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+    padding: 20px;
+}
+
+ul li h3 {
+    color: #4058db;
+    margin-bottom: 10px;
+}
+
+/* Estiliza o botão de cadastro */
+.btn {
+    background-color: #4058db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    width: 250px;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+/* Espaçamento da seção principal */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+}

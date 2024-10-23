@@ -1,0 +1,78 @@
+/* Reset básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8faff; /* Fundo suave para a página */
+}
+
+/* Estiliza o cabeçalho */
+header {
+    background-color: #4058db;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Estiliza a seção do formulário */
+section {
+    max-width: 600px; /* Largura máxima do formulário */
+    margin: 20px auto; /* Centraliza a seção */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white; /* Fundo branco para o formulário */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estiliza os rótulos dos campos */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Cor do texto */
+}
+
+/* Estiliza os campos de entrada */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+select {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaço entre os campos */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Inclui o padding e border na largura total */
+}
+
+/* Estiliza o botão de agendamento */
+input[type="submit"] {
+    background-color: #4058db; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    padding: 10px 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+input[type="submit"]:hover {
+    background-color: #333; /* Cor do botão ao passar o mouse */
+}
+
+/* Estiliza a mensagem de confirmação */
+#mensagem-confirmacao {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #4058db; /* Borda do box */
+    border-radius: 8px;
+    background-color: #e0f7fa; /* Fundo suave para a mensagem */
+    color: #4058db; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+}

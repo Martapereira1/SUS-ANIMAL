@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Voluntário - SUS Animal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cad.css"> <!-- Link para o CSS -->
+    <script>
+        function mostrarMensagem() {
+            // Esconder o formulário
+            document.getElementById("formulario").style.display = "none";
+            // Mostrar a mensagem de agradecimento
+            document.getElementById("mensagem-agradecimento").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Voluntário</h1>
+        <ul>
+            <li><a href="pagina_inicial.html">Home</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="serviços.html">Serviços</a></li>
+            <li><a href="ajudar.html">Como Ajudar</a></li>
+            <li><a href="cadastro.html" target="_blank">Cadastro</a></li> <!-- Link adicionado -->
+
+        </ul>
+    </header>
+
+    <section>
+        
+       
+
+        <form id="formulario" onsubmit="mostrarMensagem(); return false;">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" required>
+
+            <label for="interesse">Como você gostaria de ajudar?</label>
+            <label for="opções">opções</label>
+            <select id="sexo" name="sexo" required>
+                <option value="Atendimento Veterinário">Atendimento Veterinário</option>
+                <option value="Organização de Eventos">Organização de Eventos</option>
+                <option value="Divulgação e Conscientização">Divulgação e Conscientização</option>
+                <option value="Suporte Administrativo">Suporte Administrativo</option>
+                <option value="Educação e Orientação">Educação e Orientação</option>
+                <option value="Apoio Emocional e Social">Educação e Orientação</option>
+
+            <textarea id="interesse" rows="4" required></textarea>
+
+            <button type="submit">Enviar Cadastro</button>
+        </form>
+            
+        <div id="mensagem-agradecimento" style="display: none;">
+            <h2>Mensagem de Agradecimento</h2>
+            <b>Obrigado por se inscrever como voluntário da SUS Animal!</b> 
+            <p>Estamos muito felizes em contar com você em nossa equipe dedicada ao bem-estar dos cães e das famílias que precisam de ajuda. Sua disposição para contribuir faz uma grande diferença!</p>
+            <p>Em breve, nossa equipe entrará em contato com você pelo seu e-mail ou número de telefone fornecido para discutir os próximos passos e agendar um teste.</p>
+            <p>Agradecemos mais uma vez pelo seu apoio e por fazer parte da nossa missão de cuidar e proteger nossos amigos de quatro patas. </p>
+            <b>Atenciosamente, Equipe SUS Animal❤️</b> 
+
+
+        </div>
+    </section>
+</body>
+</html>

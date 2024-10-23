@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4058db;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+section {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #4058db;
+    margin-bottom: 20px;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4058db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.mensagem {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilização do header */
+header {
+    background-color: #4058db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header ul {
+    list-style-type: none; /* Remove os pontos */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Adiciona flexbox para dispor os itens lado a lado */
+    justify-content: center; /* Centraliza os itens */
+}
+
+header ul li {
+    margin-right: 15px; /* Espaçamento entre os itens */
+}
+
+header ul li:last-child {
+    margin-right: 0; /* Remove a margem do último item */
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Cirurgias - SUS Animal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cirugias.css">
+</head>
+<body>
+    <header>
+        <h1>Agendamento de Cirurgias</h1>
+        <nav>
+            <ul>
+                <li><a href="pagina_inicial.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a href="ajudar.html">Como Ajudar</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Agende a Cirurgia do Seu Pet</h2>
+        <p>Para agendar uma cirurgia, preencha o formulário abaixo com as informações necessárias.</p>
+        <form id="form-agendamento" onsubmit="return validarFormulario()">
+            <label for="nomeTutor">Nome do Tutor:</label>
+            <input type="text" id="nomeTutor" name="nomeTutor" required>
+            
+            <label for="idadeTutor">Idade do Tutor:</label>
+            <input type="number" id="idadeTutor" name="idadeTutor" required>
+            
+            <label for="cpfTutor">CPF do Tutor:</label>
+            <input type="text" id="cpfTutor" name="cpfTutor" required>
+            
+            <label for="dataNascimentoTutor">Data de Nascimento do Tutor:</label>
+            <input type="date" id="dataNascimentoTutor" name="dataNascimentoTutor" required>
+            
+            <label for="nomePet">Nome do Pet:</label>
+            <input type="text" id="nomePet" name="nomePet" required>
+            
+            <label for="racaPet">Raça do Pet:</label>
+            <input type="text" id="racaPet" name="racaPet" required>
+            
+            <label for="sexoPet">Sexo do Pet:</label>
+            <select id="sexoPet" name="sexoPet">
+                <option value="femea">Fêmea</option>
+                <option value="macho">Macho</option>
+            </select>
+            
+            <label for="dataCirurgia">Data da Cirurgia:</label>
+            <input type="date" id="dataCirurgia" name="dataCirurgia" required>
+            
+            <label for="horaCirurgia">Horário da Cirurgia:</label>
+            <input type="time" id="horaCirurgia" name="horaCirurgia" required>
+            
+            <input type="submit" value="Agendar Cirurgia">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SUS Animal</p>
+    </footer>
+</body>
+</html>

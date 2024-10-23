@@ -1,0 +1,89 @@
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Cor de fundo suave */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #4058db; /* Cor do cabeçalho */
+    color: white; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo do título da página */
+h1 {
+    margin: 0; /* Remove margens */
+}
+
+/* Estilo do título da seção */
+h2 {
+    text-align: center;
+    color: #333; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+/* Estilo do formulário */
+form {
+    max-width: 600px; /* Limita a largura do formulário */
+    margin: 0 auto; /* Centraliza o formulário */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #fff; /* Fundo branco */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo dos rótulos */
+label {
+    display: block; /* Faz o rótulo ocupar toda a largura */
+    margin: 10px 0 5px; /* Margens */
+}
+
+/* Estilo dos campos de entrada */
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Margem abaixo */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+/* Estilo do botão de envio */
+input[type="submit"] {
+    background-color: #4058db; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Sem borda */
+    padding: 10px 15px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+}
+
+/* Estilo do botão ao passar o mouse */
+input[type="submit"]:hover {
+    background-color: #333; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #f0f0f0; /* Cor do fundo do rodapé */
+    position: relative; /* Permite posicionar o rodapé */
+    bottom: 0; /* Alinha o rodapé na parte inferior */
+    width: 100%; /* Largura total */
+}
+
+/* Estilo para seções */
+section {
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px auto; /* Margem em cima e embaixo */
+    max-width: 800px; /* Limita a largura da seção */
+    border-radius: 8px; /* Bordas arredondadas */
+}

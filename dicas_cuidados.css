@@ -1,0 +1,84 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #4058db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Estilo da seção principal */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para títulos da seção */
+section h2 {
+    color: #4058db;
+    margin-top: 20px;
+    border-bottom: 2px solid #4058db;
+    padding-bottom: 5px;
+}
+
+/* Estilos para parágrafos */
+section p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Estilos para texto em negrito */
+b {
+    color: #333;
+}
+
+/* Adicionando espaçamento entre seções */
+h2 + p {
+    margin-top: 10px;
+}
+
+/* Estilo para listas */
+ul {
+    margin: 20px 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    list-style-type: none; /* Remove os pontos das listas */
+}
+
+/* Botão */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4058db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #489eb8; /* Cor do botão ao passar o mouse */
+}

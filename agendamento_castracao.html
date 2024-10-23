@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Castração - SUS Animal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="castraçao.css">
+
+</head>
+<body>
+    <header>
+        <h1>Agendamento de Castração</h1>
+        <nav>
+            <ul>
+                <li><a href="pagina_inicial.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a href="ajudar.html">Como Ajudar</a></li>
+                <li><a href="cadastro.html" target="_blank">Cadastro</a></li> <!-- Link adicionado -->
+
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Preencha o formulário para agendar a castração</h2>
+        <form id="form-castracao" onsubmit="return validarFormulario()">
+            <label for="nome-tutor">Nome do Tutor Responsável:</label>
+            <input type="text" id="nome-tutor" name="nome-tutor" required>
+
+            <label for="cpf-tutor">CPF do Tutor:</label>
+            <input type="text" id="cpf-tutor" name="cpf-tutor" required>
+
+            <label for="data-nascimento-tutor">Data de Nascimento do Tutor:</label>
+            <input type="date" id="data-nascimento-tutor" name="data-nascimento-tutor" required>
+
+            <label for="nome-animal">Nome do Cachorro:</label>
+            <input type="text" id="nome-animal" name="nome-animal" required>
+
+            <label for="raca-animal">Raça do Cachorro:</label>
+            <input type="text" id="raca-animal" name="raca-animal" required>
+
+            <label for="sexo-animal">Sexo do Cachorro:</label>
+            <select id="sexo-animal" name="sexo-animal" required>
+                <option value="macho">Macho</option>
+                <option value="femea">Fêmea</option>
+            </select>
+
+            <label for="data-agendamento">Data do Agendamento:</label>
+            <input type="date" id="data-agendamento" name="data-agendamento" required>
+
+            <label for="hora-agendamento">Horário do Agendamento:</label>
+            <input type="time" id="hora-agendamento" name="hora-agendamento" required>
+
+            <input type="submit" value="Agendar Castração">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SUS Animal</p>
+    </footer>
+
+    <script>
+        // Exibe uma mensagem quando o botão é clicado
+        document.getElementById('agendarConsulta').addEventListener('click', function() {
+            alert('Consulta agendada com sucesso!');
+        });
+    </script>
+</body>
+</html>

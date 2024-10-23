@@ -1,0 +1,112 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Alterada para uma fonte mais moderna */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+    background-color: #f4f4f9; /* Cor de fundo suave */
+    color: #333; /* Cor do texto mais legível */
+}
+
+header {
+    background-color: #3c5bbd; /* Azul mais escuro para elegância */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Efeito hover em amarelo suave */
+}
+
+button {
+    background-color: #4058db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: 5px; /* Bordas arredondadas para botões */
+    margin-top: 10px;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+main {
+    padding: 40px 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #3c5bbd;
+    color: white;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#cuidados {
+    background-color: #e0f7fa;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 10px; /* Bordas mais suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .logo {
+        max-width: 80px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+section {
+    padding: 20px;
+    margin: 10px auto; /* Centraliza a seção */
+    max-width: 800px; /* Limita a largura da seção */
+    background: #f8faff; /* Fundo branco para as seções */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}

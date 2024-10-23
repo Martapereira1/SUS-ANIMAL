@@ -1,0 +1,29 @@
+/* Estilo do botão */
+.btn-ajuda {
+    background-color: #4058db; /* Cor de fundo vibrante */
+    color: white; /* Cor do texto */
+    padding: 12px 25px; /* Espaçamento interno */
+    font-size: 18px; /* Tamanho do texto */
+    font-weight: bold; /* Texto em negrito */
+    border: none; /* Sem borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor em forma de mão */
+    display: inline-block; /* Mantém o botão inline */
+    text-align: center; /* Centraliza o texto */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Suaviza transições */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra do botão */
+    margin-top: 20px;
+}
+
+/* Efeito hover para o botão */
+.btn-ajuda:hover {
+    background-color: #4058db; /* Muda a cor ao passar o mouse */
+    transform: translateY(-3px); /* Eleva ligeiramente o botão */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+}
+
+/* Efeito quando o botão é clicado */
+.btn-ajuda:active {
+    transform: translateY(0); /* Volta à posição original */
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2); /* Sombra reduzida quando clicado */
+}

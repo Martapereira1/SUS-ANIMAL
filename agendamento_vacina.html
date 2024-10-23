@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Vacinas - SUS Animal</title>
+    <link rel="stylesheet" href="style.css"> <!-- CSS principal -->
+    <link rel="stylesheet" href="vacina.css"> <!-- CSS principal -->
+
+</head>
+<body>
+    <header>
+        <h1>Agendamento de Vacinas</h1>
+        <nav>
+            <ul>
+                <li><a href="pagina_inicial.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a href="ajudar.html">Como Ajudar</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="agendamento">
+        <h2>Agende a Vacina do Seu Cachorro</h2>
+        <form id="form-agendamento" onsubmit="return validarFormulario()">
+            <label for="nome_tutor">Nome do Tutor:</label>
+            <input type="text" id="nome_tutor" name="nome_tutor" required>
+
+            <label for="cpf_tutor">CPF do Tutor:</label>
+            <input type="text" id="cpf_tutor" name="cpf_tutor" required>
+
+            <label for="data_nascimento_tutor">Data de Nascimento do Tutor:</label>
+            <input type="date" id="data_nascimento_tutor" name="data_nascimento_tutor" required>
+
+            <label for="nome_cachorro">Nome do Cachorro:</label>
+            <input type="text" id="nome_cachorro" name="nome_cachorro" required>
+
+            <label for="raca">Raça:</label>
+            <input type="text" id="raca" name="raca" required>
+
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="feminino">Fêmea</option>
+                <option value="masculino">Macho</option>
+            </select>
+
+            <label for="data_vacina">Data da Vacinação:</label>
+            <input type="date" id="data_vacina" name="data_vacina" required>
+
+            <label for="hora_vacina">Hora da Vacinação:</label>
+            <input type="time" id="hora_vacina" name="hora_vacina" required>
+
+            <input type="submit" value="Agendar Vacina">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SUS Animal</p>
+    </footer>
+
+    <script src="ca.js"></script>
+</body>
+</html>

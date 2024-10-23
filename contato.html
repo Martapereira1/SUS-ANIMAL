@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - SUS Animal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <header>
+        <h1>Contato</h1>
+        <nav>
+            <ul>
+                <li><a href="pagina_inicial.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a href="ajudar.html">Como Ajudar</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Entre em Contato Conosco</h2>
+        <p>Tem alguma dúvida, sugestão ou gostaria de saber mais sobre nossos serviços? Preencha o formulário abaixo e entraremos em contato!</p>
+        
+        <form id="contatoForm" onsubmit="event.preventDefault(); enviar();">
+            Nome:<br>
+            <input type="text" name="nome" required><br>
+            Email:<br>
+            <input type="email" name="email" required><br>
+            Mensagem:<br>
+            <textarea name="mensagem" required></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+        
+            
+    </section>
+    
+    <section>
+        <h2>Informações de Contato</h2>
+        <p>Email: <a href="mailto:susanimais@gmail.com">contato@susanimal.com</a></p>
+        <p>Telefone: (+55) 99467-1704</p>
+    </section>
+    
+    <section>
+        <h2>Siga-nos nas Redes Sociais</h2>
+        <p>Acompanhe nosso trabalho e fique por dentro das novidades!</p>
+        <ul>
+            <li><a href="https://facebook.com/susanimal">Facebook</a></li>
+            <li><a href="https://instagram.com/susanimal">Instagram</a></li>
+            <li><a href="https://twitter.com/susanimal">Twitter</a></li>
+        </ul>
+
+    </section>
+            <script src="bt.js"></script>
+</body>
+</html>
